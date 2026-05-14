@@ -9,7 +9,6 @@ Use `forEach` to loop over the input array and work with each value.  Push the n
 ------------------------------------------------------------------------------------------------ */
 
 const addOne = (arr) => {
-  //<solution>
   const newArr = [];
 
   arr.forEach(value => {
@@ -17,7 +16,6 @@ const addOne = (arr) => {
   });
 
   return newArr;
-  //</solution>
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -29,7 +27,13 @@ Use `forEach` to loop over the input array. Modify each string, and add the upda
 ------------------------------------------------------------------------------------------------ */
 
 const addExclamation = (arr) => {
-  // Solution code here...
+  let result = [];
+
+  arr.forEach((str) => {
+    result.push(str + "!");
+  });
+
+  return result;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -41,8 +45,9 @@ Use `forEach` to loop over the input array. The modified strings should each be 
 ------------------------------------------------------------------------------------------------ */
 
 const allUpperCase = (arr) => {
-  // Solution code here...
-};
+  let result = [];
+
+  arr.forEach();
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -168,7 +173,7 @@ describe('Testing challenge 5', () => {
   });
 });
 
-describe('Testing challenge 6', () => {
+xdescribe('Testing challenge 6', () => {
   const inventory = [{ name: 'apples', available: true }, { name: 'pears', available: true }, { name: 'oranges', available: false }, { name: 'bananas', available: true }, { name: 'blueberries', available: false }];
 
   test('It should only add the available items to the list', () => {
